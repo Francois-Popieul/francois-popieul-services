@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../pages/game-portfolio.html">Game Portfolio</a>
+            <a href="../pages/program-portfolio.html">Program Portfolio</a>
+            <a href="../pages/contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="" method="get">
+                <fieldset class="contact_container">
+                    <legend class="form-legend small-caps">Contact Form</legend>
+
+                    <label class="contact_name" for="name">Name:</label>
+                    <input class="contact_name_input" type="text" id="name" name="name" placeholder="John" size="30%"
+                        maxlength="20" autofocus required />
+
+                    <label class="contact_surname" for="surname">Surname:</label>
+                    <input class="contact_surname_input" type="text" id="surname" name="surname" placeholder="Doe"
+                        size="30" maxlength="20" required />
+
+                    <label class="contact_company" for="company">Company:</label>
+                    <input class="contact_company_input" type="text" id="company" name="company"
+                        placeholder="My Little Company" size="30" maxlength="20" />
+
+                    <label class="contact_email" for="email">Email:</label>
+                    <input class="contact_email_input" type="email" id="email" name="email"
+                        placeholder="john.doe@mylittlecompagny.com" size="30" maxlength="20" required />
+
+                    <label class="contact_phone" for="telephone">Phone:</label>
+                    <input class="contact_phone_input" type="tel" id="telephone" name="telephone"
+                        placeholder="+33 6 06 06 06 06" size="30" maxlength="20" />
+
+                    <label class="contact_message" for="message">Message:</label>
+                    <textarea class="contact_message_textarea" id="message" name="message" placeholder="My message."
+                        maxlength="500" required></textarea>
+                    <button type="submit" class="submit-button">Submit</button>
+                </fieldset>                
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <section>
+            <h3 class="bold center small-caps">Social Media</h3>
+            <ul class="horizontal_container">
+                <li>
+                    <a rel="noopener" href="https://www.linkedin.com/in/françois-popieul-8b07ab285" target="_blank"><img
+                            class="icon-small" src="../Images/LI-mark.svg" alt="Linkedin Logo" /></a>
+                </li>
+                <li>
+                    <a rel="noopener" href="https://github.com/Francois-Popieul" target="_blank"><img class="icon-small"
+                            src="../Images/github-mark.svg" alt="Github Logo" /></a>
+                </li>
+                <li>
+                    <a rel="noopener" href="https://www.codecademy.com/profiles/Francois-Popieul" target="_blank"><img
+                            class="icon-small" src="../Images/CA-mark.svg" alt="CodeAcademy Logo" /></a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>

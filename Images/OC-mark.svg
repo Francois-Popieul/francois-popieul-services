@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="98"
+   height="96"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="OC-mark.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <rect
+       x="11.51671"
+       y="29.449871"
+       width="72.226221"
+       height="43.598972"
+       id="rect2" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="6.078125"
+     inkscape:cx="-8.4730077"
+     inkscape:cy="70.005141"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <ellipse
+     style="fill:#5599ff;fill-opacity:1;stroke-width:249.24;paint-order:markers stroke fill"
+     id="path1"
+     cx="49"
+     cy="48"
+     rx="49"
+     ry="48" />
+  <path
+     id="path20"
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:197.686;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+     d="M 45.523912,14.644776 A 33.596863,32.163967 0 0 0 23.98239,22.171412 l 5.145241,4.925798 A 26.736771,24.58607 0 0 1 44.502799,22.559239 26.736771,24.58607 0 0 1 71.239678,47.144249 26.736771,24.58607 0 0 1 44.502799,71.73126 26.736771,24.58607 0 0 1 28.10443,66.487603 l -4.708815,4.507986 A 33.596863,32.163967 0 0 0 45.523912,78.972024 33.596863,32.163967 0 0 0 79.120417,46.808399 33.596863,32.163967 0 0 0 45.523912,14.644776 Z" />
+</svg>

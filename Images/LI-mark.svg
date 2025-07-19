@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="98"
+   height="96"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="LI-mark.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <rect
+       x="11.51671"
+       y="29.449871"
+       width="72.226221"
+       height="43.598972"
+       id="rect2" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="6.078125"
+     inkscape:cx="32.658098"
+     inkscape:cy="52.565553"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <ellipse
+     style="fill:#00aad4;stroke-width:0.987515"
+     id="path5"
+     cx="49"
+     cy="48"
+     rx="49"
+     ry="48" />
+  <text
+     xml:space="preserve"
+     id="text1"
+     style="font-weight:bold;font-size:13.3333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);fill:#00aad4"
+     transform="matrix(5.216293,0,0,5.216293,-37.23362,-146.36827)"><tspan
+       x="11.517578"
+       y="41.459247"
+       id="tspan3"><tspan
+         style="font-weight:normal;font-family:Calibri;-inkscape-font-specification:Calibri;fill:#ffffff"
+         id="tspan1">in</tspan></tspan></text>
+</svg>
