@@ -143,6 +143,18 @@ h3 {
     vertical-align: text-bottom;
 }
 
+.portfolio-list {
+    text-align: left;
+    list-style-type: disc;
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+
+.portfolio-list-item {
+    margin: 0.8rem 0 0 5rem;
+    font-size: 1rem;
+}
+
 .game-world-image {
     display: block;
     width: 20rem;
@@ -206,6 +218,13 @@ h3 {
     border-radius: 10px;
     margin: 1% auto 1% auto;
     padding: 10px;
+}
+
+.screenshot {
+    display: block;
+    width: 66%;
+    height: auto;
+    margin: 1rem auto;
 }
 
 .carousel-container {
