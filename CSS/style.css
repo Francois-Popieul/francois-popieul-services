@@ -128,8 +128,14 @@ textarea {
     font-size: 100%;
 }
 
+h2 {
+    font-size: 1.75rem;
+    margin: 1rem 0 0.5rem 0.8rem;
+}
+
 h3 {
     font-size: 1.5rem;
+    margin: 1.5rem 0 0.5rem 0.8rem;
 }
 
 .page-title {
@@ -146,12 +152,12 @@ h3 {
 .portfolio-list {
     text-align: left;
     list-style-type: disc;
-    padding: 0.8rem;
+    padding: 0.8rem 0.8rem 0.25rem 0.8rem;
     font-size: 1rem;
 }
 
 .portfolio-list-item {
-    margin: 0.8rem 0 0 5rem;
+    margin: 0.25rem 0 0 5rem;
     font-size: 1rem;
 }
 

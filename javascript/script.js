@@ -57,9 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function displayImage(id) {
-   let largeImage = document.getElementById(id);
-   largeImage.style.display = 'block';
-   largeImage.style.width=100+"auto";
-   let url=largeImage.getAttribute('src');
-   open(url,'Image','width=largeImage.stylewidth,height=largeImage.style.height,resizable=1');
+    let largeImage = document.getElementById(id);
+    largeImage.style.display = 'block';
+    largeImage.style.width = 100 + "auto";
+    let url = largeImage.getAttribute('src');
+    open(url, 'Image', 'width=largeImage.stylewidth,height=largeImage.style.height,resizable=1');
 }
