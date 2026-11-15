@@ -57,9 +57,35 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function displayImage(id) {
-    let largeImage = document.getElementById(id);
-    largeImage.style.display = 'block';
-    largeImage.style.width = 100 + "auto";
-    let url = largeImage.getAttribute('src');
-    open(url, 'Image', 'width=largeImage.stylewidth,height=largeImage.style.height,resizable=1');
+    let source = document.getElementById(id);
+    if (!source) return;
+
+    let overlay = document.createElement("div");
+    overlay.className = "image-overlay";
+    overlay.setAttribute("role", "dialog");
+    overlay.setAttribute("aria-modal", "true");
+
+    let image = document.createElement("img");
+    image.src = source.getAttribute("src");
+    image.alt = source.alt;
+
+    let closeButton = document.createElement("button");
+    closeButton.className = "image-overlay-close";
+    closeButton.setAttribute("aria-label", "Close");
+    closeButton.textContent = "\u00d7";
+
+    function closeOverlay() {
+        overlay.remove();
+        document.removeEventListener("keydown", onKeyDown);
+    }
+
+    function onKeyDown(event) {
+        if (event.key === "Escape") closeOverlay();
+    }
+
+    overlay.addEventListener("click", closeOverlay);
+    document.addEventListener("keydown", onKeyDown);
+
+    overlay.append(image, closeButton);
+    document.body.appendChild(overlay);
 }

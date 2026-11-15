@@ -2,78 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Program Portfolio</title>
-    <link rel="stylesheet" href="../CSS/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program Portfolio</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="../pages/game-portfolio.html">Game Portfolio</a>
-            <a href="../pages/program-portfolio.html">Program Portfolio</a>
-            <a href="../pages/contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <h2>World of Warcraft Toolbox</h2>
-        <p class="portfolio_presentation">Series of Excel add-ins developped in C# during the translation of <i>World of
-                Warcraft</i>.</p>
-        <img src="../Images/Program_Portfolio/WoW_Toolbox_01.png" class="screenshot"
-            alt="World of Warcraft Toolbox Code Overview">
-        <h3>Text Rendering Tool</h3>
-        <img src="../Images/Program_Portfolio/WoW_Toolbox_02.png" class="screenshot"
-            alt="World of Warcraft Toolbox - HTML Renderer Overview">
-        <p class="portfolio_presentation bold">Features:</p>
-        <ul class="portfolio-list">
-            <li class="portfolio-list-item">Converts custom tags in HTML tags and applies format for an easier review of
-                the translation</li>
-            <li class="portfolio-list-item">Inserts game icons to check the final display</li>
-            <li class="portfolio-list-item">Creates gender and plural variants to spellcheck both versions of the texts
-            </li>
-        </ul>
-        <h3>Error Report Tool</h3>
-        <img src="../Images/Program_Portfolio/WoW_Toolbox_03.png" class="screenshot"
-            alt="World of Warcraft Toolbox - Error Report Overview">
-        <p class="portfolio_presentation bold">Features:</p>
-        <ul class="portfolio-list">
-            <li class="portfolio-list-item">Detects automatically the selected language to check in multilanguage
-                exports</li>
-            <li class="portfolio-list-item">Checks tokens match in source and target texts</li>
-            <li class="portfolio-list-item">Checks each category of lines complies with the style guide instructions
-                (capitalization, typography, syntax, spacing, etc.)</li>
-            <li class="portfolio-list-item">Checks gender and plural token syntax and makes sure each kind of token is
-                used in the right file</li>
-            <li class="portfolio-list-item">Highligts error when possible</li>
-            <li class="portfolio-list-item">Adds an error message for each type of error detected</li>
-        </ul>
-    </main>
-    <footer class="footer">
-        <section>
-            <h3 class="bold center small-caps">Social Media</h3>
-            <ul class="horizontal_container">
-                <li>
-                    <a rel="noopener" href="https://www.linkedin.com/in/françois-popieul-8b07ab285" target="_blank"><img
-                            class="icon-small" src="../Images/LI-mark.svg" alt="Linkedin Logo" /></a>
-                </li>
-                <li>
-                    <a rel="noopener" href="https://github.com/Francois-Popieul" target="_blank"><img class="icon-small"
-                            src="../Images/github-mark.svg" alt="Github Logo" /></a>
-                </li>
-                <li>
-                    <a rel="noopener" href="https://www.codecademy.com/profiles/Francois-Popieul" target="_blank"><img
-                            class="icon-small" src="../Images/CA-mark.svg" alt="CodeAcademy Logo" /></a>
-                </li>
-            </ul>
-        </section>
-    </footer>
-    <script src="../javascript/script.js"></script>
+  <header class="header">
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../pages/game-portfolio.html">Game Portfolio</a>
+      <a href="../pages/program-portfolio.html">Program Portfolio</a>
+      <a href="../pages/contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h2>World of Warcraft Toolbox</h2>
+    <p class="portfolio_presentation">Series of Excel add-in tools developped in C# during the translation of <i>World of Warcraft</i>.</p>
+    <p class="portfolio_presentation">As World of Warcraft localization files can contain thousands of strings and complex runtime variables, manually reviewing translations was both time-consuming and prone to human error. The style guide provided rules and guidelines to follow, but ensuring compliance was challenging. To streamline the QA process and reduce the risk of inconsistencies and player-facing issues, I developed a set of specialized tools focused on text rendering, automation, and validation.</p>
+    <h3>Text Rendering Tool</h3>
+    <p class="portfolio_presentation">Reviewing localization files directly in spreadsheets often makes it difficult to visualize how text will actually appear in-game, especially when dealing with complex markup and dynamic content.</p>
+    <p class="portfolio_presentation">This tool converts World of Warcraft's custom markup into formatted HTML, allowing reviewers to inspect translations in a much more realistic environment before delivery.</p>
+    <img src="../Images/Program_Portfolio/WoW_Toolbox_01.png" id="WOWT01" class="screenshot" alt="World of Warcraft Toolbox - HTML Renderer Overview" onclick="displayImage(id='WOWT01')">
+    <p class="portfolio_presentation bold">Features:</p>
+    <ul class="portfolio-list">
+      <li class="portfolio-list-item">Converts game-specific markup into HTML formatting for easier review</li>
+      <li class="portfolio-list-item">Inserts game icons and visual elements to reproduce the final in-game presentation</li>
+      <li class="portfolio-list-item">Generates gender and plural variants automatically, allowing both versions to be spellchecked and reviewed</li>
+      <li class="portfolio-list-item">Produces a browser-ready preview, making UI and formatting issues easier to spot</li>
+    </ul>
+    <h3>Error Report Tool</h3>
+    <img src="../Images/Program_Portfolio/WoW_Toolbox_02.png" id="WOWT02" class="screenshot" alt="World of Warcraft Toolbox - Error Report Overview" onclick="displayImage(id='WOWT02')">
+    <p class="portfolio_presentation bold">Features:</p>
+    <ul class="portfolio-list">
+      <li class="portfolio-list-item">Automatically detects the target language in multilingual exports</li>
+      <li class="portfolio-list-item">Validates all localization tokens against the source text</li>
+      <li class="portfolio-list-item">Detects missing, malformed, or unauthorized variables</li>
+      <li class="portfolio-list-item">Enforces style guide and typography rules</li>
+      <li class="portfolio-list-item">Validates gender and plural token syntax</li>
+      <li class="portfolio-list-item">Detects issues that may affect in-game text rendering or gameplay</li>
+      <li class="portfolio-list-item">Highlights problematic text whenever possible</li>
+      <li class="portfolio-list-item">Provides detailed error reports with actionable feedback</li>
+    </ul>
+  </main>
+  <footer class="footer">
+    <section>
+      <h3 class="bold center small-caps">Social Media</h3>
+      <ul class="horizontal_container">
+        <li>
+          <a rel="noopener" href="https://www.linkedin.com/in/françois-popieul-8b07ab285" target="_blank"><img class="icon-small" src="../Images/LI-mark.svg" alt="Linkedin Logo" /></a>
+        </li>
+        <li>
+          <a rel="noopener" href="https://github.com/Francois-Popieul" target="_blank"><img class="icon-small" src="../Images/github-mark.svg" alt="Github Logo" /></a>
+        </li>
+        <li>
+          <a rel="noopener" href="https://www.codecademy.com/profiles/Francois-Popieul" target="_blank"><img class="icon-small" src="../Images/CA-mark.svg" alt="CodeAcademy Logo" /></a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+  <script src="../javascript/script.js"></script>
 </body>
 
 </html>
