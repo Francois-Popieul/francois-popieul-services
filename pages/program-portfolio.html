@@ -23,10 +23,10 @@
     <div class="portfolio_item">
       <h2>World of Warcraft Toolbox</h2>
       <p class="portfolio_presentation">Series of Excel add-in tools developped in C# during the translation of <i>World of Warcraft</i>.</p>
-      <p class="portfolio_presentation">As World of Warcraft localization files can contain thousands of strings and complex runtime variables, manually reviewing translations was both time-consuming and prone to human error. The style guide provided rules and guidelines to follow, but ensuring compliance was challenging. To streamline the QA process and reduce the risk of inconsistencies and player-facing issues, I developed a set of specialized tools focused on text rendering, automation, and validation.</p>
+      <p class="portfolio_presentation">As <i>World of Warcraft</i> localization files can contain thousands of strings and complex runtime variables, manually reviewing translations was both time-consuming and prone to human error. The style guide provided rules and guidelines to follow, but ensuring compliance was challenging. To streamline the QA process and reduce the risk of inconsistencies and player-facing issues, I developed a set of specialized tools focused on text rendering, automation, and validation.</p>
       <h3>Text Rendering Tool</h3>
       <p class="portfolio_presentation">Reviewing localization files directly in spreadsheets often makes it difficult to visualize how text will actually appear in-game, especially when dealing with complex markup and dynamic content.</p>
-      <p class="portfolio_presentation">This tool converts World of Warcraft's custom markup into formatted HTML, allowing reviewers to inspect translations in a much more realistic environment before delivery.</p>
+      <p class="portfolio_presentation">This tool converts World of Warcraft's custom markup into formatted HTML, allowing reviewers to inspect and spellcheck translations efficiently without being distracted by raw markup codes.</p>
       <img src="../Images/Program_Portfolio/WoW_Toolbox_01.png" id="WOWT01" class="screenshot" alt="World of Warcraft Toolbox - HTML Renderer Overview" onclick="displayImage(id='WOWT01')">
       <p class="portfolio_presentation bold">Features:</p>
       <ul class="portfolio-list">
@@ -51,13 +51,38 @@
       </ul>
     </div>
     <div class="portfolio_item">
-      <h3>Guild Wars 2 Automation Tool</h3>
+      <h2>Guild Wars 2 Localization Automation Tool</h2>
+      <p class="portfolio_presentation">While working on <i>Guild Wars 2</i>, I encountered a number of repetitive localization tasks that slowed down the translation process and increased the risk of formatting errors.</p>
+      <p class="portfolio_presentation">French localization regularly required the creation of gender and plural variants, the insertion of localization markers, terminology lookups, and numerous quality assurance checks. While these tasks were essential, they consisted mostly of repetitive text manipulation rather than actual translation work.</p>
+      <p class="portfolio_presentation">To streamline this workflow, I developed a standalone automation tool using AutoHotkey.</p>
+      <h3>The Challenge</h3>
+      <p class="portfolio_presentation"><i>Guild Wars 2</i> uses specialized localization markup to support grammatical variations such as gender and plural forms.</p>
+      <p class="portfolio_presentation">Creating this markup manually hundreds of times throughout the project was repetitive, time-consuming, and prone to mistakes.</p>
+      <p class="portfolio_presentation">Translators also needed to perform additional tasks such as:</p>
+      <ul class="portfolio-list">
+        <li class="portfolio-list-item">Inserting localization markers and placeholders</li>
+        <li class="portfolio-list-item">Verifying localization codes and formatting tags</li>
+        <li class="portfolio-list-item">Looking up terminology on official Guild Wars wikis</li>
+        <li class="portfolio-list-item">Preparing text for proofreading and spellchecking</li>
+        <li class="portfolio-list-item">Checking compliance with style-guide requirements</li>
+      </ul>
+      <h3>The Solution</h3>
+      <p class="portfolio_presentation">I created a keyboard-driven automation tool designed to integrate directly into the translator's daily workflow.</p>
+      <p class="portfolio_presentation">When a translator selects a word or phrase requiring a grammatical variant, a keyboard shortcut automatically generates and inserts the appropriate Guild Wars 2 localization markup.</p>
+      <p class="portfolio_presentation">The tool also provides quick-access commands for inserting common localization markers, launching terminology searches, and performing quality assurance checks.</p>
+      <p class="portfolio_presentation">As the application runs in the background and is controlled almost entirely through shortcuts, it keeps the workflow fast and efficient.</p>
       <img src="../Images/Program_Portfolio/GW2_Tool.gif" id="GW2T" class="screenshot" alt="Guild Wars 2 Automation Tool" onclick="displayImage(id='GW2T')">
       <p class="portfolio_presentation bold">Features:</p>
       <ul class="portfolio-list">
-        <li class="portfolio-list-item">Interface to customize the hotkeys for automation</li>
-        <li class="portfolio-list-item">Automates repetitive localization tasks</li>
+        <li class="portfolio-list-item"><b>Token generation:</b><br>Automatic creation of gender, plural, and multi-form localization markup based on the translator's selection</li>
+        <li class="portfolio-list-item"><b>Terminology lookup:</b><br>Instant searches of selected terms on official Guild Wars wikis</li>
+        <li class="portfolio-list-item"><b>Quality assurance:</b><br>Automated checks for common formatting and localization issues, including double spaces, incorrect punctuation spacing, unbalanced markup, damaged localization tags, and formatting inconsistencies</li>
+        <li class="portfolio-list-item"><b>Proofreading preparation:</b><br>Text export from Excel into Word and automatic cleanup of localization codes and placeholders using a macro for review and spellchecking</li>
+        <li class="portfolio-list-item"><b>User interface:</b><br>Setting panel to customize hotkeys for the different features</li>
       </ul>
+      <h3>Impact</h3>
+      <p class="portfolio_presentation">This tool reduced repetitive manual operations throughout the localization process and helped maintain consistency across large volumes of translated content.</p>
+      <p class="portfolio_presentation">More importantly, it allowed translators to spend less time manipulating markup and more time focusing on translation quality.</p>
     </div>
   </main>
   <footer class="footer">
