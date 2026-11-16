@@ -28,10 +28,10 @@ body {
 
 .header {
     display: flex;
-    background-color: var(--primary-color);
-    color: var(--clear-color);
     justify-content: center;
     align-items: center;
+    background-color: var(--primary-color);
+    color: var(--clear-color);
     padding: 10px 0 10px 0;
     font-size: 1rem;
     top: 0;
@@ -43,7 +43,7 @@ body {
 .footer {
     background-color: var(--primary-color);
     color: var(--clear-color);
-    padding: 10px;
+    padding: 10px 0 10px 0;
     text-align: center;
     width: 100%;
     font-size: 1rem;
@@ -159,6 +159,11 @@ h3 {
 .portfolio-list-item {
     margin: 0.25rem 0 0 5rem;
     font-size: 1rem;
+}
+
+.portfolio_item {
+    margin: 2rem auto;
+    border: solid 2px var(--primary-color);
 }
 
 .game-world-image {
