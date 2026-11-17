@@ -357,7 +357,7 @@ h3 {
     grid-row: 2;
 }
 
-.developper {
+.developer {
     font-size: 1rem;
     font-variant: small-caps;
     grid-column: 2;
@@ -365,7 +365,7 @@ h3 {
     margin: 0;
 }
 
-.developper_name {
+.developer_name {
     font-size: 1rem;
     margin: 0;
     grid-column: 3/4;
