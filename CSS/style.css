@@ -164,12 +164,13 @@ h3 {
 .portfolio_item {
     margin: 2rem auto;
     border: solid 2px var(--primary-color);
+    border-radius: 1rem;
 }
 
 .game-world-image {
     display: block;
     width: 20rem;
-    border-radius: 10px;
+    border-radius: 1rem;
     margin: 2rem;
 }
 
@@ -233,8 +234,10 @@ h3 {
 
 .screenshot {
     display: block;
-    width: 66%;
+    width: auto;
     height: auto;
+    max-height: 33vh;
+    max-width: 66%;
     margin: 1rem auto;
 }
 

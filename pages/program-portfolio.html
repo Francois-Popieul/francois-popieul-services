@@ -29,6 +29,7 @@
       <p class="portfolio_presentation bold">Features:</p>
       <ul class="portfolio-list">
         <li class="portfolio-list-item">Automatically detects the target language in multilingual exports</li>
+        <li class="portfolio-list-item">Applies language-specific validation rules</li>
         <li class="portfolio-list-item">Validates all localization tokens against the source text</li>
         <li class="portfolio-list-item">Detects missing, malformed, or unauthorized variables</li>
         <li class="portfolio-list-item">Enforces style guide and typography rules</li>
@@ -50,35 +51,37 @@
       </ul>
     </div>
     <div class="portfolio_item">
-      <h2>Guild Wars 2 Localization Automation Tool</h2>
-      <p class="portfolio_presentation">While working on <i>Guild Wars 2</i>, I encountered a number of repetitive localization tasks that slowed down the translation process and increased the risk of formatting errors.</p>
+      <h2>Guild Wars 2 Localization Automation Tool</h2>
+      <p class="portfolio_presentation">While working on <i>Guild Wars 2</i>, I encountered a number of repetitive localization tasks that slowed down the translation process and increased the risk of formatting errors.</p>
       <p class="portfolio_presentation">French localization regularly required the creation of gender and plural variants, the insertion of localization markers, terminology lookups, and numerous quality assurance checks. While these tasks were essential, they consisted mostly of repetitive text manipulation rather than actual translation work.</p>
       <p class="portfolio_presentation">To streamline this workflow, I developed a standalone automation tool using AutoHotkey.</p>
       <h3>The Challenge</h3>
-      <p class="portfolio_presentation"><i>Guild Wars 2</i> uses specialized localization markup to support grammatical variations such as gender and plural forms.</p>
+      <p class="portfolio_presentation"><i>Guild Wars 2</i> uses specialized localization markup to support grammatical variations such as gender and plural forms.</p>
       <p class="portfolio_presentation">Creating this markup manually hundreds of times throughout the project was repetitive, time-consuming, and prone to mistakes.</p>
+      <img src="../Images/Program_Portfolio/GW2_Text_Sample.webp" id="GW2TS" class="screenshot" alt="Guild Wars 2 Text Sample with Localization Markups" onclick="displayImage(id='GW2TS')">
       <p class="portfolio_presentation">Translators also needed to perform additional tasks such as:</p>
       <ul class="portfolio-list">
-        <li class="portfolio-list-item">Inserting localization markers and placeholders</li>
         <li class="portfolio-list-item">Verifying localization codes and formatting tags</li>
-        <li class="portfolio-list-item">Looking up terminology on official Guild Wars wikis</li>
+        <li class="portfolio-list-item">Looking up terminology on official <i>Guild Wars</i> wikis</li>
         <li class="portfolio-list-item">Preparing text for proofreading and spellchecking</li>
         <li class="portfolio-list-item">Checking compliance with style-guide requirements</li>
       </ul>
       <h3>The Solution</h3>
       <p class="portfolio_presentation">I created a keyboard-driven automation tool designed to integrate directly into the translator's daily workflow.</p>
-      <p class="portfolio_presentation">When a translator selects a word or phrase requiring a grammatical variant, a keyboard shortcut automatically generates and inserts the appropriate Guild Wars 2 localization markup.</p>
+      <p class="portfolio_presentation">When a translator selects a word or phrase requiring a grammatical variant, a keyboard shortcut automatically generates and inserts the appropriate <i>Guild Wars 2</i> localization markup.</p>
       <p class="portfolio_presentation">The tool also provides quick-access commands for inserting common localization markers, launching terminology searches, and performing quality assurance checks.</p>
       <p class="portfolio_presentation">As the application runs in the background and is controlled almost entirely through shortcuts, it keeps the workflow fast and efficient.</p>
       <img src="../Images/Program_Portfolio/GW2_Tool.gif" id="GW2T" class="screenshot" alt="Guild Wars 2 Automation Tool" onclick="displayImage(id='GW2T')">
       <p class="portfolio_presentation bold">Features:</p>
       <ul class="portfolio-list">
         <li class="portfolio-list-item"><b>Token generation:</b><br>Automatic creation of gender, plural, and multi-form localization markup based on the translator's selection</li>
-        <li class="portfolio-list-item"><b>Terminology lookup:</b><br>Instant searches of selected terms on official Guild Wars wikis</li>
+        <li class="portfolio-list-item"><b>Terminology lookup:</b><br>Instant searches of selected terms on official <i>Guild Wars</i> wikis</li>
         <li class="portfolio-list-item"><b>Quality assurance:</b><br>Automated checks for common formatting and localization issues, including double spaces, incorrect punctuation spacing, unbalanced markup, damaged localization tags, and formatting inconsistencies</li>
         <li class="portfolio-list-item"><b>Proofreading preparation:</b><br>Text export from Excel into Word and automatic cleanup of localization codes and placeholders using a macro for review and spellchecking</li>
         <li class="portfolio-list-item"><b>User interface:</b><br>Setting panel to customize hotkeys for the different features</li>
       </ul>
+      <img src="../Images/Program_Portfolio/GW2_Error_Report.webp" id="GW2ER" class="screenshot" alt="Guild Wars 2 Error Report" onclick="displayImage(id='GW2ER')">
+      <img src="../Images/Program_Portfolio/GW2_Settings.webp" id="GW2S" class="screenshot" alt="Guild Wars 2 Settings" onclick="displayImage(id='GW2S')">
       <h3>Impact</h3>
       <p class="portfolio_presentation">This tool reduced repetitive manual operations throughout the localization process and helped maintain consistency across large volumes of translated content.</p>
       <p class="portfolio_presentation">More importantly, it allowed translators to spend less time manipulating markup and more time focusing on translation quality.</p>
