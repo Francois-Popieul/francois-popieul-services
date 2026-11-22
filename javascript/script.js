@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let carousels = document.querySelectorAll(".carousel-container");
+    let carousels = document.querySelectorAll(".carousel_container");
 
     carousels.forEach(carouselContainer => {
         let carousel = carouselContainer.querySelector(".carousel");
@@ -61,7 +61,7 @@ function displayImage(id) {
     if (!source) return;
 
     let overlay = document.createElement("div");
-    overlay.className = "image-overlay";
+    overlay.className = "image_overlay";
     overlay.setAttribute("role", "dialog");
     overlay.setAttribute("aria-modal", "true");
 
@@ -70,7 +70,7 @@ function displayImage(id) {
     image.alt = source.alt;
 
     let closeButton = document.createElement("button");
-    closeButton.className = "image-overlay-close";
+    closeButton.className = "image_overlay_close";
     closeButton.setAttribute("aria-label", "Close");
     closeButton.textContent = "\u00d7";
 
