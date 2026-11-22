@@ -159,6 +159,10 @@ h3 {
     vertical-align: text-bottom;
 }
 
+.invisible {
+    display: none;
+}
+
 .portfolio_list {
     text-align: left;
     list-style-type: disc;
