@@ -11,4 +11,5 @@ This site is designed to:
 - Provide a way for visitors to **contact me directly**
 
 ## 📬 Contact
-Feel free to reach out via the contact form on the site or connect with me through GitHub.
+
+Feel free to reach out via the Linkedin.
