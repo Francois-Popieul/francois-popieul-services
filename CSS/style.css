@@ -253,6 +253,13 @@ h3 {
     justify-content: center;
 }
 
+.screenshot_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .screenshot {
     display: block;
     width: auto;
@@ -568,6 +575,15 @@ main {
     width: min(20rem, 42vw);
     border: 4px solid var(--clear-color);
     box-shadow: 0 16px 36px rgba(18, 52, 90, 0.2);
+}
+
+.caption {
+    font-size: smaller;
+    text-align: center;
+    color: var(--text-color);
+    font-style: italic;
+    max-width: 50%;
+    margin: 0.5rem auto;
 }
 
 .home_introduction {

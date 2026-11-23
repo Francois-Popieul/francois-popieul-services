@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="../CSS/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -23,14 +24,27 @@
     <h1 class="page-title invisible">Program Portfolio</h1>
     <div class="portfolio_item">
       <h2>World of Warcraft Toolbox</h2>
-      <p class="portfolio_presentation">Series of Excel add-in tools developed in C# during the translation of <i>World of Warcraft</i>.</p>
-      <p class="portfolio_presentation">As <i>World of Warcraft</i> localization files can contain thousands of strings and complex runtime variables, manually reviewing translations was both time-consuming and prone to human error. The style guide provided many rules and guidelines to follow, but ensuring compliance was challenging. To streamline the QA process and reduce the risk of inconsistencies and player-facing issues, I developed a set of specialized tools focused on text rendering, automation, and validation.</p>
+      <p class="portfolio_presentation">Series of Excel add-in tools developed in C# during the translation of <i>World
+          of Warcraft</i>.</p>
+      <p class="portfolio_presentation">As <i>World of Warcraft</i> localization files can contain thousands of strings
+        and complex runtime variables, manually reviewing translations was both time-consuming and prone to human error.
+        The style guide provided many rules and guidelines to follow, but ensuring compliance was challenging. To
+        streamline the QA process and reduce the risk of inconsistencies and player-facing issues, I developed a set of
+        specialized tools focused on text rendering, automation, and validation.</p>
       <h3>Error Report Tool</h3>
-      <p class="portfolio_presentation">This tool is designed to automate the detection and reporting of localization issues, ensuring that translations adhere to the style guide, comply with linguistic rules, and are free from errors that could impact the in-game experience.</p>
-      <img src="../Images/Program_Portfolio/WoW_Toolbox_02.png" id="WOWT02" class="screenshot" alt="World of Warcraft Toolbox - Error Report Overview" onclick="displayImage(id='WOWT02')">
+      <p class="portfolio_presentation">This tool is designed to automate the detection and reporting of localization
+        issues, ensuring that translations adhere to the style guide, comply with linguistic rules, and are free from
+        errors that could impact the in-game experience.</p>
+      <div class="screenshot_block">
+        <img src="../Images/Program_Portfolio/WoW_Toolbox_02.png" id="WOWT02" class="screenshot"
+          alt="World of Warcraft Toolbox - Error Report Overview" onclick="displayImage(id='WOWT02')">
+        <p class="caption">Screenshot of an error report with highlight colors for detected errors and valid code,
+          along with comments.</p>
+      </div>
       <p class="portfolio_presentation bold">Features:</p>
       <ul class="portfolio_list">
-        <li class="portfolio_list_item">Automatically detects the selected target language to check in multilingual exports</li>
+        <li class="portfolio_list_item">Automatically detects the selected target language to check in multilingual
+          exports</li>
         <li class="portfolio_list_item">Applies language-specific validation rules</li>
         <li class="portfolio_list_item">Validates all localization tokens against the source text</li>
         <li class="portfolio_list_item">Detects missing, malformed, or unauthorized variables</li>
@@ -41,27 +55,52 @@
         <li class="portfolio_list_item">Provides detailed error reports with actionable feedback</li>
       </ul>
       <h3>Text Rendering Tool</h3>
-      <p class="portfolio_presentation">Reviewing localization files directly in spreadsheets or CAT tools often makes it difficult to visualize how text will actually appear in-game, especially when dealing with complex markup and dynamic content.</p>
-      <p class="portfolio_presentation">This tool converts <i>World of Warcraft</i>'s custom markup into formatted HTML, allowing reviewers to inspect and spellcheck translations efficiently without being distracted by raw markup codes.</p>
-      <img src="../Images/Program_Portfolio/WoW_Toolbox_01.png" id="WOWT01" class="screenshot" alt="World of Warcraft Toolbox - HTML Renderer Overview" onclick="displayImage(id='WOWT01')">
+      <p class="portfolio_presentation">Reviewing localization files directly in spreadsheets or CAT tools often makes
+        it difficult to visualize how text will actually appear in-game, especially when dealing with complex markup and
+        dynamic content.</p>
+      <p class="portfolio_presentation">This tool converts <i>World of Warcraft</i>'s custom markup into formatted HTML,
+        allowing reviewers to inspect and spellcheck translations efficiently without being distracted by raw markup
+        codes.</p>
+      <div class="screenshot_block">
+        <img src="../Images/Program_Portfolio/WoW_Toolbox_01.png" id="WOWT01" class="screenshot"
+          alt="World of Warcraft Toolbox - HTML Renderer Overview" onclick="displayImage(id='WOWT01')">
+        <p class="caption">Screenshot of the HTML renderer previewing source and localized texts with game-specific
+          markup converted.</p>
+      </div>
       <p class="portfolio_presentation bold">Features:</p>
       <ul class="portfolio_list">
         <li class="portfolio_list_item">Converts game-specific markup into HTML formatting for easier review</li>
-        <li class="portfolio_list_item">Inserts game icons and visual elements to reproduce the final in-game presentation</li>
-        <li class="portfolio_list_item">Generates gender and plural variants automatically, allowing both versions to be spellchecked and reviewed</li>
-        <li class="portfolio_list_item">Produces a browser-ready preview, making UI and formatting issues easier to spot</li>
+        <li class="portfolio_list_item">Inserts game icons and visual elements to reproduce the final in-game
+          presentation</li>
+        <li class="portfolio_list_item">Generates gender and plural variants automatically, allowing both versions to be
+          spellchecked and reviewed</li>
+        <li class="portfolio_list_item">Produces a browser-ready preview, making UI and formatting issues easier to spot
+        </li>
       </ul>
-      <p class="portfolio_presentation">These tools together streamline the localization review process, making it more efficient and less error-prone. They helped detect and correct hundreds of localization issues that might have otherwise gone unnoticed.</p>
+      <p class="portfolio_presentation">These tools together streamline the localization review process, making it more
+        efficient and less error-prone. They helped detect and correct hundreds of localization issues that might have
+        otherwise gone unnoticed.</p>
     </div>
     <div class="portfolio_item">
       <h2>Guild Wars&nbsp;2 Localization Automation Tool</h2>
-      <p class="portfolio_presentation">While working on <i>Guild Wars&nbsp;2</i>, I encountered a number of repetitive localization tasks that slowed down the translation process and increased the risk of formatting errors.</p>
-      <p class="portfolio_presentation">French localization regularly required the creation of gender and plural variants, the insertion of localization markers, terminology lookups, and numerous quality assurance checks. While these tasks were essential, they consisted mostly of repetitive text manipulation rather than actual translation work.</p>
-      <p class="portfolio_presentation">To streamline this workflow, I developed a standalone automation tool using AutoHotkey.</p>
+      <p class="portfolio_presentation">While working on <i>Guild Wars&nbsp;2</i>, I encountered a number of repetitive
+        localization tasks that slowed down the translation process and increased the risk of formatting errors.</p>
+      <p class="portfolio_presentation">French localization regularly required the creation of gender and plural
+        variants, the insertion of localization markers, terminology lookups, and numerous quality assurance checks.
+        While these tasks were essential, they consisted mostly of repetitive text manipulation rather than actual
+        translation work.</p>
+      <p class="portfolio_presentation">To streamline this workflow, I developed a standalone automation tool using
+        AutoHotkey.</p>
       <h3>The Challenge</h3>
-      <p class="portfolio_presentation"><i>Guild Wars&nbsp;2</i> uses specialized localization markup to support grammatical variations such as gender and plural forms.</p>
-      <p class="portfolio_presentation">Creating this markup manually hundreds of times throughout the project was repetitive, time-consuming, and could cause human errors.</p>
-      <img src="../Images/Program_Portfolio/GW2_Text_Sample.webp" id="GW2TS" class="screenshot" alt="Guild Wars 2 Text Sample with Localization Markups" onclick="displayImage(id='GW2TS')">
+      <p class="portfolio_presentation"><i>Guild Wars&nbsp;2</i> uses specialized localization markup to support
+        grammatical variations such as gender and plural forms.</p>
+      <p class="portfolio_presentation">Creating this markup manually hundreds of times throughout the project was
+        repetitive, time-consuming, and could cause human errors.</p>
+      <div class="screenshot_block">
+        <img src="../Images/Program_Portfolio/GW2_Text_Sample.webp" id="GW2TS" class="screenshot"
+          alt="Guild Wars 2 Text Sample with Localization Markups" onclick="displayImage(id='GW2TS')">
+        <p class="caption">Screenshot of a text sample with localization markups in <i>Guild Wars&nbsp;2</i>.</p>
+      </div>
       <p class="portfolio_presentation">Translators also needed to perform additional tasks such as:</p>
       <ul class="portfolio_list">
         <li class="portfolio_list_item">Verifying localization codes and formatting tags</li>
@@ -70,40 +109,71 @@
         <li class="portfolio_list_item">Checking compliance with style-guide requirements</li>
       </ul>
       <h3>The Solution</h3>
-      <p class="portfolio_presentation">I created a keyboard-driven automation tool designed to integrate directly into the translator's daily workflow.</p>
-      <p class="portfolio_presentation">When a translator selects a word or phrase requiring a grammatical variant, a keyboard shortcut automatically generates and inserts the appropriate <i>Guild Wars&nbsp;2</i> localization markup.</p>
-      <p class="portfolio_presentation">The tool also provides quick-access commands for inserting common localization markers, launching terminology searches, and performing quality assurance checks.</p>
-      <p class="portfolio_presentation">As the application runs in the background and is controlled almost entirely through shortcuts, it keeps the workflow fast and efficient.</p>
-      <img src="../Images/Program_Portfolio/GW2_Workflow.gif" id="GW2W" class="screenshot" alt="Guild Wars 2 Workflow GIF" onclick="displayImage(id='GW2W')">
+      <p class="portfolio_presentation">I created a keyboard-driven automation tool designed to integrate directly into
+        the translator's daily workflow.</p>
+      <p class="portfolio_presentation">When a translator selects a word or phrase requiring a grammatical variant, a
+        keyboard shortcut automatically generates and inserts the appropriate <i>Guild Wars&nbsp;2</i> localization
+        markup.</p>
+      <p class="portfolio_presentation">The tool also provides quick-access commands for inserting common localization
+        markers, launching terminology searches, and performing quality assurance checks.</p>
+      <p class="portfolio_presentation">As the application runs in the background and is controlled almost entirely
+        through shortcuts, it keeps the workflow fast and efficient.</p>
+      <div class="screenshot_block">
+        <img src="../Images/Program_Portfolio/GW2_Workflow.gif" id="GW2W" class="screenshot"
+          alt="Guild Wars 2 Workflow GIF" onclick="displayImage(id='GW2W')">
+        <p class="caption">GIF showing the workflow of the localization tool in <i>Guild Wars&nbsp;2</i>.</p>
+      </div>
       <p class="portfolio_presentation bold">Features:</p>
       <ul class="portfolio_list">
-        <li class="portfolio_list_item"><b>Token generation:</b><br>Automatic creation of gender, plural, and multi-form localization markup based on the translator's selection</li>
-        <li class="portfolio_list_item"><b>Terminology lookup:</b><br>Instant searches of selected terms on official <i>Guild Wars</i> wikis</li>
-        <li class="portfolio_list_item"><b>Quality assurance:</b><br>Automated checks for common formatting and localization issues, including double spaces, incorrect punctuation spacing, unbalanced markup, damaged localization tags, and formatting inconsistencies</li>
-        <li class="portfolio_list_item"><b>Proofreading preparation:</b><br>Text export from Excel into Word and automatic cleanup of localization codes and placeholders using a macro for review and spellchecking</li>
-        <li class="portfolio_list_item"><b>User interface:</b><br>Setting panel to customize hotkeys for the different features</li>
+        <li class="portfolio_list_item"><b>Token generation:</b><br>Automatic creation of gender, plural, and multi-form
+          localization markup based on the translator's selection</li>
+        <li class="portfolio_list_item"><b>Terminology lookup:</b><br>Instant searches of selected terms on official
+          <i>Guild Wars</i> wikis
+        </li>
+        <li class="portfolio_list_item"><b>Quality assurance:</b><br>Automated checks for common formatting and
+          localization issues, including double spaces, incorrect punctuation spacing, unbalanced markup, damaged
+          localization tags, and formatting inconsistencies</li>
+        <li class="portfolio_list_item"><b>Proofreading preparation:</b><br>Text export from Excel into Word and
+          automatic cleanup of localization codes and placeholders using a macro for review and spellchecking</li>
+        <li class="portfolio_list_item"><b>User interface:</b><br>Setting panel to customize hotkeys for the different
+          features</li>
       </ul>
       <div class="screenshot_container">
-        <img src="../Images/Program_Portfolio/GW2_Error_Report.webp" id="GW2ER" class="screenshot" alt="Guild Wars 2 Error Report" onclick="displayImage(id='GW2ER')">
-        <img src="../Images/Program_Portfolio/GW2_Settings.webp" id="GW2S" class="screenshot" alt="Guild Wars 2 Settings" onclick="displayImage(id='GW2S')">
+        <div class="screenshot_block">
+          <img src="../Images/Program_Portfolio/GW2_Error_Report.webp" id="GW2ER" class="screenshot"
+            alt="Guild Wars 2 Error Report" onclick="displayImage(id='GW2ER')">
+          <p class="caption">Screenshot of an error report allowing translators to quickly identify issues.</p>
+        </div>
+        <div class="screenshot_block">
+          <img src="../Images/Program_Portfolio/GW2_Settings.webp" id="GW2S" class="screenshot"
+            alt="Guild Wars 2 Settings" onclick="displayImage(id='GW2S')">
+          <p class="caption">Screenshot of the settings panel with default hotkeys and a tab for customizing hotkeys in
+            <i>Guild Wars&nbsp;2</i>.
+          </p>
+        </div>
+        <h3>Impact</h3>
+        <p class="portfolio_presentation">This tool reduced repetitive manual operations throughout the localization
+          process and helped avoid errors across large volumes of translated content.</p>
+        <p class="portfolio_presentation">More importantly, it allowed translators to spend less time manipulating
+          markup
+          and more time focusing on translation quality.</p>
       </div>
-      <h3>Impact</h3>
-      <p class="portfolio_presentation">This tool reduced repetitive manual operations throughout the localization process and helped avoid errors across large volumes of translated content.</p>
-      <p class="portfolio_presentation">More importantly, it allowed translators to spend less time manipulating markup and more time focusing on translation quality.</p>
-    </div>
   </main>
   <footer class="footer">
     <section>
       <h3 class="bold center small_caps">Social Media</h3>
       <ul class="horizontal_container">
         <li>
-          <a rel="noopener" href="https://www.linkedin.com/in/françois-popieul-8b07ab285" target="_blank"><img class="icon_small" src="../Images/LI-mark.svg" alt="LinkedIn Logo" /></a>
+          <a rel="noopener" href="https://www.linkedin.com/in/françois-popieul-8b07ab285" target="_blank"><img
+              class="icon_small" src="../Images/LI-mark.svg" alt="LinkedIn Logo" /></a>
         </li>
         <li>
-          <a rel="noopener" href="https://github.com/Francois-Popieul" target="_blank"><img class="icon_small" src="../Images/github-mark.svg" alt="GitHub Logo" /></a>
+          <a rel="noopener" href="https://github.com/Francois-Popieul" target="_blank"><img class="icon_small"
+              src="../Images/github-mark.svg" alt="GitHub Logo" /></a>
         </li>
         <li>
-          <a rel="noopener" href="https://www.codecademy.com/profiles/Francois-Popieul" target="_blank"><img class="icon_small" src="../Images/CA-mark.svg" alt="Codecademy Logo" /></a>
+          <a rel="noopener" href="https://www.codecademy.com/profiles/Francois-Popieul" target="_blank"><img
+              class="icon_small" src="../Images/CA-mark.svg" alt="Codecademy Logo" /></a>
         </li>
       </ul>
     </section>
