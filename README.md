@@ -12,4 +12,8 @@ This site is designed to:
 
 ## 📬 Contact
 
-Feel free to reach out via the Linkedin.
+Use the contact page or reach out via LinkedIn.
+
+The contact form is disabled until Formspree is configured. Create a form on Formspree,
+replace `https://formspree.io/f/YOUR_FORM_ID` in `pages/contact.html` with its endpoint,
+then remove the availability notice and the `disabled` attribute from the submit button.
